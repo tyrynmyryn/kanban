@@ -1,0 +1,20 @@
+@import '../../styles/vars/vars.scss';
+
+.button {
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 12px;
+    background-color: $white;
+    transition: .2s box-shadow, .2s background-color;
+    cursor: pointer;
+    &:focus, &:hover {
+        outline: none;
+        box-shadow: 0 0 10px rgba($white, .5);
+    }
+    &:active {
+        background-color: rgba($white, .95);
+    }
+}

@@ -1,0 +1,90 @@
+@import '../../styles/vars/vars.scss';
+
+.card {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    padding: 8px;
+    background-color: $grey-dark;
+    font-size: 16px;
+    color: $white;
+    word-wrap: break-word;
+    transition: .2s background-color, .2s transform;
+    cursor: grab;
+    &__row {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+    &_hover {
+        background-color: rgba($grey-dark, .5);
+    }
+    &_delete {
+        transform: translateX(calc(-100% - 15px));
+        pointer-events: none;
+        cursor: auto;
+    }
+}
+
+.add-card-button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    color: $white;
+    transition: .2s background-color;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba($grey-light, .5);
+    }
+    &:active {
+        background-color: rgba($grey-light, 1);
+    }
+}
+
+.delete-card-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $grey-light;
+        transform: translateY(-50%) rotate(45deg);
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $grey-light;
+        transform: translateY(50%) rotate(-45deg);
+    }
+}
+
+
+.textarea {
+    width: 100%;
+    padding: 8px;
+    background-color: $grey-dark;
+    border: none;
+    font-size: 16px;
+    color: $white;
+    resize: none;
+}

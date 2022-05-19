@@ -1,0 +1,31 @@
+@import './fonts/fonts.scss';
+@import './vars/vars.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: $body-color;
+}
+
+.errors {
+    width: 100%;
+    text-align: left;
+}
+
+.error {
+    color: $error-color;
+    margin: 5px 0;
+}
+
+.link {
+    font-size: 16px;
+    line-height: 16px;
+    color: $white;
+    text-decoration: none;
+    cursor: pointer;
+}

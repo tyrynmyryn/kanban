@@ -1,0 +1,14 @@
+@import '../../styles/vars/vars.scss';
+
+.container {
+    max-width: $large-size;
+    margin: 0 auto;
+    padding: 30px;
+    @media (max-width: $big-size) {
+        padding: 30px 15px;
+    }
+
+    @media (max-width: $small-size) {
+        padding: 30px 15px;
+    }
+}

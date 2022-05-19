@@ -1,0 +1,41 @@
+@import '../../styles/vars/vars.scss';
+
+.board {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: $grey;
+    height: fit-content;
+    &__header {
+        padding: 25px 15px;
+        font-size: 24px;
+        line-height: 24px;
+        color: $white;
+    }
+    &__body {
+        width: 100%;
+        padding: 15px;
+    }
+    @media (max-width: $big-size) {
+        &__header {
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
+}
+
+.orange {
+    background-color: $card-orange;
+}
+
+.blue {
+    background-color: $card-blue;
+}
+
+.yellow {
+    background-color: $card-yellow;
+}
+
+.green {
+    background-color: $card-green;
+}

@@ -1,0 +1,19 @@
+@import '../../styles/vars/vars.scss';
+
+.input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: $white;
+    transition: .2s box-shadow;
+    &:focus, &:hover {
+        outline: none;
+        box-shadow: 0 0 10px rgba($white, .5);
+    }
+}
+
+.input_error {
+    box-shadow: 0 0 10px rgba($error-color, 1);
+}
